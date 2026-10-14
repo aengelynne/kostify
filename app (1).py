@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 
 # =========================================================
-# KOSTFINDER — Modern Cozy Living
+# KOSTIFY — Modern Cozy Living
 # =========================================================
 
 st.set_page_config(
-    page_title="KostFinder | Find Your Place",
+    page_title="Kostify | Find, Filter, and Fit",
     page_icon="🏡",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -450,7 +450,7 @@ def render_kartu_kost(item, peringkat, detail_skor=True):
 # ------------------------- SIDEBAR ------------------------
 
 with st.sidebar:
-    st.markdown("<div class='brand-mark'>🏡 KostFinder</div>", unsafe_allow_html=True)
+    st.markdown("<div class='brand-mark'>🏡 Kostify</div>", unsafe_allow_html=True)
     st.markdown(
         "<div class='sidebar-subtitle'>Find a place to call home.<br>"
         "Your next chapter starts here.</div>",
@@ -525,7 +525,7 @@ if halaman == "🏠 Beranda":
             render_kartu_kost(item, nomor, detail_skor=False)
 
     st.markdown(
-        "<div class='footer-note'>KostFinder · Find your comfort, find your place.</div>",
+        "<div class='footer-note'>Kostify · Find your comfort, find your place.</div>",
         unsafe_allow_html=True,
     )
 
@@ -823,7 +823,7 @@ elif halaman == "⚙️ Kriteria & Bobot":
 
 elif halaman == "📖 Tutorial":
     st.markdown("<div class='section-eyebrow'>A QUICK GUIDE</div>", unsafe_allow_html=True)
-    st.title("Cara menggunakan KostFinder")
+    st.title("Cara menggunakan Kostify")
     st.markdown(
         "<div class='section-intro'>Beberapa langkah sederhana untuk menemukan kost yang sesuai.</div>",
         unsafe_allow_html=True,
@@ -868,6 +868,6 @@ elif halaman == "📖 Tutorial":
     )
 
 st.markdown(
-    "<div class='footer-note'>Made with care · KostFinder 🌿</div>",
+    "<div class='footer-note'>Made with care · Kostify 🌿</div>",
     unsafe_allow_html=True,
 )
