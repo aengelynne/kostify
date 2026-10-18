@@ -54,54 +54,60 @@ st.markdown(
     h1 { font-weight: 800 !important; }
     h2, h3 { font-weight: 700 !important; }
 
-    
-/* SIDEBAR — LIGHT SAGE THEME */
+
+/* SIDEBAR — DARK FOREST GREEN */
 [data-testid="stSidebar"] {
-    background: #EEF2E9 !important;
-    border-right: 1px solid #D9E2D6;
+    background: #294638 !important;
+    border-right: 1px solid #3F5C4B;
 }
 
 [data-testid="stSidebar"] > div:first-child {
     padding-top: 1.5rem;
 }
 
-/* Default text in sidebar */
-[data-testid="stSidebar"] p,
-[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] .brand-mark {
+    color: #FFFFFF !important;
+}
+
+[data-testid="stSidebar"] .sidebar-subtitle {
+    color: #D5E0D4 !important;
+}
+
 [data-testid="stSidebar"] h1,
 [data-testid="stSidebar"] h2,
 [data-testid="stSidebar"] h3,
 [data-testid="stSidebar"] h4,
+[data-testid="stSidebar"] p,
 [data-testid="stSidebar"] [data-testid="stMarkdownContainer"],
-[data-testid="stSidebar"] [data-testid="stWidgetLabel"] {
-    color: #294638 !important;
+[data-testid="stSidebar"] [data-testid="stWidgetLabel"],
+[data-testid="stSidebar"] label {
+    color: #F5F5ED !important;
 }
 
-/* Input text */
 [data-testid="stSidebar"] input,
 [data-testid="stSidebar"] textarea {
+    background-color: #FFFFFF !important;
     color: #25382F !important;
     -webkit-text-fill-color: #25382F !important;
-    background-color: #FFFFFF !important;
 }
 
-/* Dropdown text */
-[data-testid="stSidebar"] [data-baseweb="select"] *,
-[data-testid="stSidebar"] [data-baseweb="popover"] * {
+[data-testid="stSidebar"] [data-baseweb="select"] > div {
+    background-color: #FFFFFF !important;
     color: #25382F !important;
 }
 
-/* Brand */
-[data-testid="stSidebar"] .brand-mark {
-    color: #294638 !important;
+[data-testid="stSidebar"] [data-baseweb="select"] input {
+    color: #25382F !important;
+    -webkit-text-fill-color: #25382F !important;
 }
 
-[data-testid="stSidebar"] .sidebar-subtitle {
-    color: #65786A !important;
+[data-testid="stSidebar"] [data-testid="stCheckbox"] label,
+[data-testid="stSidebar"] [data-testid="stCheckbox"] p {
+    color: #F5F5ED !important;
 }
 
 [data-testid="stSidebar"] hr {
-    border-color: #D5DED2 !important;
+    border-color: #526B5A !important;
 }
 
     .brand-mark {
